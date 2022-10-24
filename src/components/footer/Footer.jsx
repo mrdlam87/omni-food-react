@@ -52,9 +52,8 @@ const Footer = () => {
         <nav className="nav-col">
           <p className="footer-heading">Account</p>
           <ul className="footer-nav">
-            <FooterLink label="Create Account" href="#" />
+            <FooterLink label="Create account" href="#" />
             <FooterLink label="Sign in" href="#" />
-            <FooterLink label="Create Account" href="#" />
             <FooterLink label="iOS app" href="#" />
             <FooterLink label="Android app" href="#" />
           </ul>
