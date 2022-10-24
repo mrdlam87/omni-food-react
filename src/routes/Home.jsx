@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import SectionCta from "../components/section-cta/SectionCta";
 import SectionFeatured from "../components/section-featured/SectionFeatured";
@@ -24,6 +25,7 @@ const Home = () => {
         <SectionPricing />
         <SectionCta />
       </main>
+      <Footer />
     </div>
   );
 };
