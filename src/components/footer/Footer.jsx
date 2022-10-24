@@ -1,3 +1,4 @@
+import { animateScroll as scroll } from "react-scroll";
 import "./Footer.scss";
 import logo from "../../assets/images/omnifood-logo.png";
 import FooterSocial from "../footer-social/FooterSocial";
@@ -13,9 +14,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="container grid grid--footer">
         <div className="logo-col">
-          <a href="#" className="footer-logo">
+          <p className="footer-logo" onClick={scroll.scrollToTop}>
             <img className="logo" src={logo} alt="Omnifood Logo" />
-          </a>
+          </p>
 
           <ul className="social-links">
             <FooterSocial icon={<IoLogoInstagram className="social-icon" />} />

@@ -1,10 +1,10 @@
 import "./CtaForm.scss";
 
-const CtaForm = () => {
+const CtahtmlForm = () => {
   return (
     <form className="cta-form" name="sign-up" netlify>
       <div>
-        <label for="full-name">Full Name</label>
+        <label htmlFor="full-name">Full Name</label>
         <input
           id="full-name"
           name="full-name"
@@ -15,7 +15,7 @@ const CtaForm = () => {
       </div>
 
       <div>
-        <label for="email">Email Address</label>
+        <label htmlFor="email">Email Address</label>
         <input
           id="email"
           name="email"
@@ -26,7 +26,7 @@ const CtaForm = () => {
       </div>
 
       <div>
-        <label for="select-where">Where did you hear from us?</label>
+        <label htmlFor="select-where">Where did you hear from us?</label>
         <select name="select-where" id="select-where" required>
           <option value="">Please choose one option:</option>
           <option value="friends">Friends and family</option>
@@ -42,4 +42,4 @@ const CtaForm = () => {
   );
 };
 
-export default CtaForm;
+export default CtahtmlForm;

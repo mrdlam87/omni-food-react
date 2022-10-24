@@ -1,11 +1,11 @@
-.nav-link:link,
-.nav-link:visited {
+.nav-link {
   display: inline-block;
   text-decoration: none;
   color: #333;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .nav-link:hover,
@@ -13,8 +13,7 @@
   color: #cf711f;
 }
 
-.nav-link.nav-cta:link,
-.nav-link.nav-cta:visited {
+.nav-link.nav-cta {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
@@ -27,8 +26,7 @@
 }
 
 @media (max-width: 59em) {
-  .nav-link:link,
-  .nav-link:visited {
+  .nav-link {
     font-size: 3rem;
   }
 }

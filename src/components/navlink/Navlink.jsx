@@ -1,11 +1,19 @@
+import { Link } from "react-scroll";
 import "./Navlink.scss";
 
-const Navlink = ({ children, className, ...otherProps }) => {
+const Navlink = ({ children, className, to, ...otherProps }) => {
   return (
     <li>
-      <a className={`nav-link ${className}`} {...otherProps}>
+      <Link
+        to={to}
+        spy={true}
+        smooth={true}
+        duration={500}
+        className={`nav-link ${className}`}
+        {...otherProps}
+      >
         {children}
-      </a>
+      </Link>
     </li>
   );
 };

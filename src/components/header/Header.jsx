@@ -1,3 +1,4 @@
+import { animateScroll as scroll } from "react-scroll";
 import logo from "../../assets/images/omnifood-logo.png";
 import Navbar from "../navbar/Navbar";
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
@@ -10,9 +11,12 @@ const Header = () => {
 
   return (
     <header className={`main-header ${openMenu ? "nav-open" : ""}`}>
-      <a href="#">
-        <img className="header-logo" src={logo} alt="Omnifood Logo" />
-      </a>
+      <img
+        className="header-logo"
+        src={logo}
+        alt="Omnifood Logo"
+        onClick={scroll.scrollToTop}
+      />
       <Navbar />
       <button className="btn-nav" onClick={clickHandler}>
         <IoMenuOutline className="btn-icon" name="menu" />

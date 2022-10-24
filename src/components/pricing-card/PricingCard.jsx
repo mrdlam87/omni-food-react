@@ -10,12 +10,16 @@ const PricingCard = ({
   listCons,
   isBest,
 }) => {
-  const proItems = listPros?.map((pro) => (
-    <PriceItem isPro={true}>{pro}</PriceItem>
+  const proItems = listPros?.map((pro, index) => (
+    <PriceItem key={index} isPro={true}>
+      {pro}
+    </PriceItem>
   ));
 
-  const conItems = listCons?.map((pro) => (
-    <PriceItem isPro={false}>{pro}</PriceItem>
+  const conItems = listCons?.map((pro, index) => (
+    <PriceItem key={index} isPro={false}>
+      {pro}
+    </PriceItem>
   ));
 
   return (

@@ -5,11 +5,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <ul>
-        <Navlink href="#how">How it works</Navlink>
-        <Navlink href="#meals">Meals</Navlink>
-        <Navlink href="#testimonials">Testimonials</Navlink>
-        <Navlink href="#pricing">Pricing</Navlink>
-        <Navlink className="nav-cta" href="#cta">
+        <Navlink to="section-how">How it works</Navlink>
+        <Navlink to="section-meals">Meals</Navlink>
+        <Navlink to="section-testimonials">Testimonials</Navlink>
+        <Navlink to="section-pricing">Pricing</Navlink>
+        <Navlink className="nav-cta" to="section-cta">
           Try for free
         </Navlink>
       </ul>

@@ -1,3 +1,6 @@
+import { useInView } from "react-intersection-observer";
+import { useContext, useEffect } from "react";
+import { IntersectionContext } from "../../contexts/IntersectionContexts";
 import Button from "../button/Button";
 import "./SectionHero.scss";
 import customer1 from "../../assets/images/customers/customer-1.jpg";
@@ -8,9 +11,6 @@ import customer5 from "../../assets/images/customers/customer-5.jpg";
 import customer6 from "../../assets/images/customers/customer-6.jpg";
 import heroWebp from "../../assets/images/hero.webp";
 import heroPng from "../../assets/images/hero.png";
-import { useInView } from "react-intersection-observer";
-import { useContext, useEffect } from "react";
-import { IntersectionContext } from "../../contexts/IntersectionContexts";
 
 const SectionHero = () => {
   const { setHeroInView } = useContext(IntersectionContext);
@@ -34,10 +34,10 @@ const SectionHero = () => {
             healthy again. Tailored to your personal tastes and nutritional
             needs.
           </p>
-          <Button href="#cta" className="btn--full margin-right-sm">
+          <Button to="section-cta" className="btn--full margin-right-sm">
             Start eating well
           </Button>
-          <Button href="#how" className="btn--outline">
+          <Button to="section-how" className="btn--outline">
             Learn more
           </Button>
           <div className="delivered-meals">

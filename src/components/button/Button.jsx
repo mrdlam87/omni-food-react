@@ -1,10 +1,19 @@
+import { Link } from "react-scroll";
+
 import "./Button.scss";
 
-const Button = ({ children, className, ...otherProps }) => {
+const Button = ({ children, className, to, ...otherProps }) => {
   return (
-    <a className={`btn ${className}`} {...otherProps}>
+    <Link
+      to={to}
+      spy={true}
+      smooth={true}
+      duration={500}
+      className={`btn ${className}`}
+      {...otherProps}
+    >
       {children}
-    </a>
+    </Link>
   );
 };
 
