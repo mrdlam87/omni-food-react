@@ -1,0 +1,44 @@
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+
+  label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  input::placeholder {
+    color: #aaa;
+  }
+
+  /* CUSTOM FOCUS OUTLINE */
+  *:focus {
+    outline: none;
+    /* outline: 4px dotted #e67e22;
+    outline-offset: 8px; */
+    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+  }
+}
+
+@media (max-width: 59em) {
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+}

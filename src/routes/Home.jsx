@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import Header from "../components/header/Header";
+import SectionCta from "../components/section-cta/SectionCta";
 import SectionFeatured from "../components/section-featured/SectionFeatured";
 import SectionHero from "../components/section-hero/SectionHero";
 import SectionHow from "../components/section-how/SectionHow";
@@ -21,6 +22,7 @@ const Home = () => {
         <SectionMeals />
         <SectionTestimonials />
         <SectionPricing />
+        <SectionCta />
       </main>
     </div>
   );
